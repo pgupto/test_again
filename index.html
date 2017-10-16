@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Latitude Analysis: Summary</title>
+	<link rel="stylesheet" type="text/css" href="index_style_sheet.css">
+</head>
+
+<div class="menu">
+	<a id="main" href="index.html">Home</a>
+	<a style="float: right" href="Comparison.html">Comparison</a>
+	<a style="float: right" href="Data.html">Data</a>
+
+	<div style="float: right" class="dropdown">
+		<button class="dropbtn">Plot</button>
+		<div class="dropdown-content">
+			<a href="viz_one.html">Temperature Analysis</a>
+			<a href="viz_two.html">Humidity Analysis</a>
+			<a href="viz_three.html">Cloudiness Analysis</a>
+			<a href="viz_four.html">Wind Speed Analysis</a>
+		</div>
+	</div>
+</div>
+
+<div class="text_box">
+	<body style="background-color:white;">
+	<h1 style="font-family:sans-serif;">Comparing Latitude's Relation</h1>
+
+	
+
+	<p>* This site shows the movement and changes in the weather as we move along various coordinates with respect to the equator.</p>
+	<p>* For starters, using some technical analysis in python, the latitudes and longtitudes are generated. Then using open source package (citipy), the city names and coordinates were located the cities closest to the 500 random coordinates. </p>
+	<p>* Then using API requests, the key variables like temperature, cloudiness, wind speed and humidity values were extracted (Courtesy: Weather API). Then we did a transfer of this data to our technical notebook and loaded the data by creating a dataset.</p>
+	<p>* With this data, scatter graphs of weather variables and city (based on longitude and latitude values) were analysed and observed. Explore the site to read more findings from the analysis. </p>
+</div>
+
+<div class="pic_links">
+
+	<h3>Visualizations</h3>
+	<a href="viz_one.html"><img class="img" src="lat_temp.png"></a>
+	<a href="viz_two.html"><img class="img" src="lat_hum.png"></a>
+	<a href="viz_three.html"><img class="img" src="lat_cloud.png"></a>
+	<a href="viz_four.html"><img class="img" src="lat_wind.png"></a>
+
+</div>
+
+</html>
